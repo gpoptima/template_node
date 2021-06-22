@@ -1,0 +1,13 @@
+{
+  "name": "TemplateNode",
+  "version": "1.0.0",
+  "description": "Desc",
+  "main": "index.js",
+  "repository": "https://github.com/gpoptima/template_node.git",
+  "author": "Ajelet <ajelet.rivera@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

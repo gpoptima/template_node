@@ -2,11 +2,8 @@ const models = require('../models/');
 const {sendData} = require('../helpers/');
 const { Op } = require('sequelize')
 
-
 module.exports =  class Auto {
 
-    
-    
     static index(req, res) { 
 
          models

@@ -1,15 +1,15 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
-const config = require('../config/');
+const config = require('../config/config.json');
 
 const sequelize = new  Sequelize(
-        config[config.mode].database.database,
-        config[config.mode].database.user,
-        config[config.mode].database.password,
+        config[config.mode].database,
+        config[config.mode].username,
+        config[config.mode].password,
         {
-        host: config[config.mode].database.host,
-        dialect: config[config.mode].database.dialect,
+        host: config[config.mode].host,
+        dialect: config[config.mode].dialect,
         dialectOptions: {
             timezone: process.env.db_timezone
         },
@@ -22,7 +22,7 @@ const sequelize = new  Sequelize(
             timestamps: false
         },
         benchmark: false,
-        logging: config[config.mode].database.debug?console.log:false
+        logging: config[config.mode].debug?console.log:false
     })
 
 let db = {};

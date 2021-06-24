@@ -28,7 +28,7 @@ let authToken = controllers.usuario.authToken
 
 restfull(app,'/auto/version',authToken, controllers.version)
 restfull(app,'/auto',authToken, controllers.auto)
-restfull(app,'/auto/version',authToken, controllers.version)
+
 app.post('/login', (req,res,next)=>{next()} , controllers.usuario.index);
 
 

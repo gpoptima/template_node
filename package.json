@@ -14,7 +14,6 @@
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.2",
-    "sequelize-auto": "^0.8.3"
   },
   "scripts": {
     "start": "nodemon  index.js",
